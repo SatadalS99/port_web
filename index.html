@@ -1,0 +1,132 @@
+<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
+<html lang="en"> <!-- Root element with language set to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the layout responsive -->
+    <title>Satadal Santra | My Data Science Portfolio</title> <!-- Page title shown in the browser tab -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS stylesheet -->
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li> <!-- Link to About section -->
+            <li><a href="#projects">Projects</a></li> <!-- Link to Projects section -->
+            <li><a href="#contact">Contact</a></li> <!-- Link to Contact section -->
+        </ul>
+    </nav>
+
+    <!-- Hero section with intro text -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Data Science student with<br>Creativity & Analysis</h1> <!-- Main heading with line break -->
+            <p>Master's Candidate in Data Science | Machine Learning Enthusiast | Data Visualizer</p> <!-- Subheading description -->
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2> <!-- Section title -->
+        <div class="about-grid">
+            <img src="profile-image.jpg" alt="Profile" class="profile-img"> <!-- Profile image -->
+            <div>
+                <p class="lead-text">I'm a data science student. Trying to transform my career, I transform complex datasets into actionable insights through innovative approaches.</p> <!-- Short bio -->
+                <div class="skills-container">
+                    <h3>Technical Toolkit</h3> <!-- Skills subtitle -->
+                    <div class="project-tags">
+                        <span class="tag">Python</span> <!-- Individual skill tag -->
+                        <span class="tag">SQL</span>
+                        <span class="tag">VSCode</span>
+                        <span class="tag">Jupyter Notebook</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2> <!-- Section title -->
+        <div class="projects-grid">
+            <!-- First project card -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project1.jpg" alt="Financial Analysis"> <!-- Project image -->
+                </div>
+                <div class="project-info">
+                    <h3>Project title 1</h3> <!-- Project title 1-->
+                    <div class="project-tags">
+                        <span class="tag">Time Series</span> <!-- Tech/skills used -->
+                        <span class="tag">ML</span>
+                        <span class="tag">EDA</span>
+                    </div>
+                    <p>Something big is coming up...</p> <!-- Short description -->
+                </div>
+            </div>
+            
+            <!-- Second project card -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project2.jpg" alt="Image Recognition"> <!-- Project image -->
+                </div>
+                <div class="project-info">
+                    <h3>Project title 2</h3> <!-- Project title 2-->
+                    <div class="project-tags">
+                        <span class="tag">ML</span>
+                        <span class="tag">DL</span>
+                        <span class="tag">VSCode</span>
+                    </div>
+                    <p>Something big is coming up...</p> <!-- Short description -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <div class="contact-section">
+            <h2 class="contact-title">Let's Connect</h2> <!-- Section title -->
+            <p class="contact-subtitle">Open for collaborations and open to work for social cause!</p> <!-- Subtitle -->
+            <div class="contact-links">
+                <!-- Contact icon links -->
+                <a href="#" id="emailLink">
+                    <i class="fas fa-envelope contact-icon"></i> <!-- Email icon -->
+                </a>
+                <a href="#">
+                    <i class="fab fa-github contact-icon"></i> <!-- GitHub icon -->
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin contact-icon"></i> <!-- LinkedIn icon -->
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Close button -->
+            <h2>Contact Me</h2> <!-- Modal title -->
+            <form id="contactForm"> <!-- Contact form -->
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required> <!-- Name input -->
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required> <!-- Email input -->
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" placeholder="Subject" required> <!-- Subject input -->
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea> <!-- Message textarea -->
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button> <!-- Submit button -->
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
